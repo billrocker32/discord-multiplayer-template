@@ -6,10 +6,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm run --filter \"./packages/**\" --parallel dev",
+    "build": "pnpm run --filter \"./packages/**\" --parallel build",
     "tunnel": "cloudflared tunnel --url http://localhost:3001"
   },
-  "engines" : { 
-    "node" : ">=21.0.0 <22.0.0"
+  "engines": {
+    "node": ">=21.0.0 <22.0.0"
   },
   "author": "Phaser Studio Inc <support@phaser.io> (https://www.phaser.io)",
   "license": "MIT",

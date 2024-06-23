@@ -11,15 +11,18 @@ export class GameRoom extends Room<GameState> {
       "smile",
       "alien",
       "a",
+      "a_2",
       "b",
       "c",
       "d",
       "cross_1",
       "cross_2",
       "cross_3",
+      "cross_4",
       "nought_1",
       "nought_2",
       "nought_3",
+      "nought_4",
     ];
     draggableList.forEach((draggable, index) => {
       const draggableObject = new Draggables();

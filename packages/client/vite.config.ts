@@ -17,7 +17,7 @@ export default ({ mode }) => {
       port: 3000,
       proxy: {
         "/api": {
-          target: "http://localhost:3001",
+          target: "http://localhost",
           changeOrigin: true,
           secure: false,
           ws: true,
@@ -25,7 +25,7 @@ export default ({ mode }) => {
         },
       },
       hmr: {
-        clientPort: 3000, // for dev: 3000, for production: 443
+        clientPort: 443, // for dev: 3000, for production: 443
       },
     },
   });
